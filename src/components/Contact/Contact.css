@@ -11,7 +11,7 @@
 #contact h1 {
     font-size: 3rem;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .contact-container {
@@ -130,6 +130,7 @@ textarea::placeholder {
 }
 
 @media (max-width:549px) {
+
     .contact-container {
         flex-direction: column;
     }
