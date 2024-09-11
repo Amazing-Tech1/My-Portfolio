@@ -65,7 +65,8 @@
 .menu ul li {
     font-size: 2rem;
 }
-.menu ul li:hover{
+
+.menu ul li:hover {
     border-bottom: 2px solid black;
     display: inline-block;
     transform: scale(1.2);
@@ -109,7 +110,14 @@
         padding-right: 10px;
         display: block;
     }
+
     .menu {
         display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .menu ul li {
+        font-size: 1.2rem;
     }
 }

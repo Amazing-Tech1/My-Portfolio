@@ -3,6 +3,7 @@
     background-color: rgba(0, 0, 0, 0.795);
     color: goldenrod;
     padding-bottom: 20px;
+    scroll-margin-top: 3rem;
 }
 
 #about h1 {
