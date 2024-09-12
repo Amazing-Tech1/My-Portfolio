@@ -23,7 +23,7 @@ function Portfolio() {
                 </div>
                 <div className="work">
                     <img src={cart_app} alt="" />
-                     <h2>E-commerce app</h2>
+                    <h2>E-commerce app</h2>
                 </div>
                 <div className="work">
                     <img src={delivery_app} alt="" />

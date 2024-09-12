@@ -4,6 +4,9 @@
     color: goldenrod;
     padding-bottom: 20px;
     scroll-margin-top: 3rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 #about h1 {
