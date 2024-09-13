@@ -65,7 +65,8 @@ h2 {
     flex-basis: 50%;
     align-items: center;
     height: 100vh;
-    background: url(../../assets/background.jpeg);
+    background: url(../../assets/background.jpeg) no-repeat center;
+    background-size: 100%;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     overflow: hidden;
