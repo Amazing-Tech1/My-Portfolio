@@ -1,163 +1,163 @@
 #hero {
     height: 100vh;
     width: 100%;
-    padding: 1rem 2rem;
     background-color: black;
     color: whitesmoke;
     overflow: hidden;
-    animation: fadeIn linear;
-    animation-timeline: view();
-    animation-range: entry 0;
-}
-
-.hero-content {
-    position: relative;
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 .hero-left {
-    position: absolute;
-    width: 50%;
-    top: 180px;
-    left: 0;
-    z-index: 1;
-    animation: fadeIn 3s
+    flex-basis: 50%;
+    animation: fadeIn 3s;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-left p {
-    font-size: 40px;
-    color: goldenrod;
-}
-
-.bio {
-    font-size: 14px;
+    font-size: 2rem;
     color: gold;
-    max-width: 100%;
+    padding-bottom: 2rem;
 }
 
-.hero-left h1 {
+.hero-left h1,
+h2 {
     background-image: linear-gradient(to right, gold, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: goldenrod;
-    line-height: 1.5;
-    font-size: 4rem;
+    line-height: 1.2;
+    font-size: max(5rem, 20px);
+}
+
+.hero-left h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.hero-left span {
+    display: inline-block;
+    width: 80%;
+    font-size: 1.5rem;
+    color: gold;
+
 }
 
 .hero-left button {
     font-size: max(2vw, 20px);
     background-color: goldenrod;
-    margin-top: 10px;
+    margin-top: 5rem;
     padding: 10px;
     border-radius: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     cursor: pointer;
+    width: 150px;
 }
 
-#hero .hero_img {
-    position: absolute;
-    right: 0;
-    top: 4rem;
-    height: calc(100vh - 5rem);
+.hero-right {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    height: 100vh;
+    background: url(../../assets/background.jpeg);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    overflow: hidden;
+    animation: slideDown 2s;
 }
 
-@media (max-width:1050px) {
-    .hero-content {
-        max-width: 100%;
-    }
+.hero-right img {
+    padding-top: 15%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+
 }
 
-@media (max-width:852px) {
+@media (max-width:1054px) {
     #hero {
-        padding: 1rem 1rem;
-
+        flex-direction: column-reverse;
+        padding-left: 0;
     }
 
     .hero-left {
-        width: 60%
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        height: 40%;
     }
 
+    .hero-left h1 {
+        font-size: 4rem;
+    }
+
+    .hero-left h2 {
+        font-size: 3rem;
+    }
+
+    .hero-left p {
+        padding-bottom: 0.5rem;
+    }
+
+
+    .hero-left span {
+        text-align: center;
+    }
+
+    .hero-left button {
+        margin-top: 1rem;
+    }
+
+    .hero-right {
+        width: 100%;
+        height: 50%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 40%;
+        border-bottom-left-radius: 40%;
+    }
+}
+
+@media (max-width:800px) {
     .hero-left h1 {
         font-size: 3rem;
     }
 
-    #hero .hero_img {
-        top: 8rem;
-        height: calc(100vh - 8rem);
-    }
-
-}
-
-@media (max-width:526px) {
-
-    #hero {
-        padding: 1rem 0.5rem;
-
-    }
-
-    .hero-left {
-        width: 60%
+    .hero-left h2 {
+        font-size: 2rem;
     }
 
     .hero-left p {
-        font-size: 35px;
+        padding-bottom: 0.5rem;
     }
 
-    .hero-left h1 {
-        font-size: 2.5rem;
+    .hero-left span {
+        font-size: 1rem;
     }
 
-    .bio {
-        font-size: 12px;
-    }
-
-    #hero .hero_img {
-        top: 9rem;
-        height: calc(100vh - 10rem);
+    .hero-left button {
+        margin-top: 1.5rem;
+        font-size: max(2vw, 15px);
+        width: 100px;
     }
 }
 
-@media (max-width:430px) {
-
-    .hero-left {
-        width: 70%;
-    }
-
-    #hero .hero_img {
-        width: 250px;
-    }
-
-}
-
-@media (max-width:370px) {
-
-    .hero-left {
-        width: 90%;
-    }
-
-}
-
-@media (max-width:291px) {
+@media (max-width:240px) {
     .hero-left p {
-        font-size: 30px;
+        font-size: 1rem;
     }
 
     .hero-left h1 {
         font-size: 2rem;
     }
 
-    .bio {
-        font-size: 10px;
-    }
-
-    .hero-left button {
-        font-size: 14px;
+    .hero-left h2 {
+        font-size: 1rem;
     }
 }
-
