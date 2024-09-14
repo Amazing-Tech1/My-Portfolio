@@ -28,28 +28,33 @@ function Contact() {
         <section id='contact'>
             <h1>Contact me</h1>
             <div className="contact-container">
-                <div className="contact-left">
+                <div className="contact-left"
+                    data-aos="fade-right"
+                    data-aos-duration="3000"
+                >
                     <h2>Let's talk</h2>
                     <p>I'm currently available to take on new projects especially on the front end development, so feel free to send a message about anything that you want to work on</p>
                     <div className="contact-details">
                         <img src={url} alt="" />
                         <div className='detail-container'>
                             <div className="contact-detail">
-                                <RiMailLine />
+                                <RiMailLine size={20} />
                                 <span>kelvinMakinde2@gmail.com</span>
                             </div>
                             <div className="contact-detail">
-                                <RiPhoneLine />
+                                <RiPhoneLine size={20} />
                                 <span>+234 9065273201</span>
                             </div>
                             <div className="contact-detail">
-                                <RiMapPinLine />
+                                <RiMapPinLine size={20} />
                                 <span>Ilorin, Kwara State Nigeria</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="contact-right">
+                <div className="contact-right"
+                    data-aos="fade-left"
+                    data-aos-duration="3000">
                     <form ref={form} onSubmit={sendEmail}>
                         <label htmlFor="name"> Your Name</label>
                         <input type="text" id='name' placeholder='Enter your name' name="your_name" required />

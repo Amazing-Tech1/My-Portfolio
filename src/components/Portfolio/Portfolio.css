@@ -1,8 +1,8 @@
 #portfolio {
     width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.795);
     color: whitesmoke;
     scroll-margin-top: 3rem;
 }
@@ -15,10 +15,7 @@
 }
 
 #portfolio p {
-    text-align: center;
     padding: 10px;
-    width: 70%;
-    margin: auto;
 }
 
 #portfolio i {
@@ -37,6 +34,7 @@
 .work {
     display: flex;
     flex-direction: column;
+    width: 270px;
 }
 
 .work:hover {
@@ -59,19 +57,21 @@
 
 
 @media (max-width: 750px) {
+    #portfolio {
+        max-width: 95%;
+    }
+
     #portfolio p {
         width: 100%
     }
 
     .work {
-        width: 150px;
-        height: 220px;
+        width: 200px;
     }
 }
 
 @media (max-width: 450px) {
     .work {
-        width: 100px;
-        height: 170px;
+        width: 130px;
     }
 }

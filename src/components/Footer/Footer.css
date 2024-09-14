@@ -1,17 +1,20 @@
 .footer {
-    background-color: rgba(0, 0, 0, 0.801);
+    max-width: 80%;
+    margin: 0 auto;
     color: whitesmoke;
     padding: 10px;
 }
-.footer .logo{
+
+.footer .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
-.logo a:hover{
-transform: scale(1.3);
+
+.logo a:hover {
+    transform: scale(1.3);
 }
 
 .footer hr {
@@ -19,9 +22,17 @@ transform: scale(1.3);
     margin: 10px 0px 10px 0px;
 }
 
-.footer p a{
+.footer p a {
     color: goldenrod;
 }
+
 .footer p {
     text-align: center;
+    font-size: 1.3rem;
+}
+
+@media (max-width:750px) {
+    .footer {
+        max-width: 95%;
+    }
 }

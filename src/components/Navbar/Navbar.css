@@ -98,6 +98,11 @@
     background-color: goldenrod;
 }
 
+.navbar button:hover {
+    transform: scale(1.05);
+    background-color: rgba(218, 165, 32, 0.863);
+}
+
 @media (max-width:750px) {
 
     .nav-middle ul,

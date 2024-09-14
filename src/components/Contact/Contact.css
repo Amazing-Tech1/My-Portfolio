@@ -1,5 +1,7 @@
 #contact {
-    background-color: rgba(0, 0, 0, 0.795);
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
     color: goldenrod;
     padding: 15px;
     display: flex;
@@ -18,7 +20,6 @@
     display: flex;
     margin: 25px 0;
     gap: 5px;
-    width: 80%;
     justify-content: center;
 
 }
@@ -26,8 +27,10 @@
 .contact-left {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: left;
     flex-grow: 1;
-    width: 50%;
+    flex-basis: 50%;
 }
 
 .contact-left h2 {
@@ -38,12 +41,12 @@
 .contact-left p {
     font-size: 15px;
     color: whitesmoke;
+    width: 80%;
 }
 
 .contact-details {
     margin-top: 15px;
     display: flex;
-    justify-content: left;
     flex-direction: column;
     gap: 10px;
 }
@@ -53,6 +56,7 @@
     width: 200px;
     object-position: center;
     height: 200px;
+    align-items: center;
 
 }
 
@@ -60,7 +64,6 @@
     display: flex;
     margin-top: 10px;
     flex-wrap: no-wrap;
-    font-size: 20px;
     align-items: center;
     gap: 5px
 }
@@ -72,7 +75,7 @@
 
 .contact-right {
     flex-grow: 1;
-    width: 60%;
+    flex-basis: 50%;
     justify-content: center;
 }
 
@@ -85,7 +88,7 @@
 textarea {
     font-size: 1.4rem;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
     border-radius: 10px;
     outline: none;
     background-color: whitesmoke;
@@ -102,6 +105,7 @@ textarea::placeholder {
     align-items: center;
     place-self: center;
     font-size: 2rem;
+    margin-top: 10%;
     padding: 5px;
     border-radius: 10px;
     background-color: goldenrod;
@@ -109,23 +113,18 @@ textarea::placeholder {
     cursor: pointer;
 }
 
+.contact-right button:hover {
+    transform: scale(1.05);
+    background-color: rgba(218, 165, 32, 0.863);
+}
+
 @media (max-width:750px) {
-    .contact-container {
-        width: 100%;
+    #contact {
+        max-width: 95%;
     }
 
     .contact-left p {
-        font-size: 10px;
-    }
-
-    .contact-left,
-    .contact-right {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .contact-details {
-        align-items: center;
+        font-size: 15px;
     }
 }
 
@@ -137,21 +136,32 @@ textarea::placeholder {
 
     .contact-details {
         flex-direction: row-reverse;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
 
+    }
+
+    .contact-left p {
+        width: 100%;
     }
 
     .contact-details img {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
     }
 
-    .contact-left,
-    .contact-right {
-        width: 90%;
+    .contact-right button {
+        margin-top: 5%;
     }
 
     .contact-right form {
         margin-top: 20px;
     }
+
+    .contact-detail span {
+        font-size: 0.7rem;
+    }
+
 }

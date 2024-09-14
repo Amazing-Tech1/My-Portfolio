@@ -9,9 +9,14 @@ function Portfolio() {
     return (
         <section id='portfolio'>
             <h1>My Portfolio</h1>
-            <p>I take pride in paying attention to the smallest details and making sure that my work is pixel perfect. i am excited to bring my skills and experience to help businesses achieve their goals and create a strong online presence</p>
+            <p
+                data-aos="zoom-out"
+                data-aos-duration="2000"
+            >I take pride in paying attention to the smallest details and making sure that my work is pixel perfect. i am excited to bring my skills and experience to help businesses achieve their goals and create a strong online presence</p>
             <i>Here are some screenshots of my works: </i>
-            <div className="works">
+            <div className="works"
+                data-aos="flip-right"
+                data-aos-duration="2000" >
                 <div className="work">
                     <img src={check_list} alt="" />
                     <h2>Check-List app</h2>

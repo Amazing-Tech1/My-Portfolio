@@ -1,6 +1,7 @@
 #about {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.795);
+    max-width: 80%;
+    margin: auto;
     color: goldenrod;
     padding-bottom: 20px;
     scroll-margin-top: 3rem;
@@ -15,12 +16,10 @@
 
 .about_content {
     display: flex;
-    max-width: 80%;
-    gap: 20px;
     justify-content: center;
     align-items: center;
     padding: 2px 14px;
-    margin: 5% auto 0;
+    margin: 5% auto;
 }
 
 .about_left img {
@@ -28,6 +27,7 @@
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 40px;
 }
 
 .about_right {
@@ -50,8 +50,7 @@
 }
 
 .skills {
-    margin: 5% auto 0;
-    max-width: 70%;
+    margin: 5% auto ;
 }
 
 .skills h2 {
@@ -84,6 +83,10 @@
 }
 
 @media (max-width: 750px) {
+    #about {
+        max-width: 95%;
+    }
+
     .about_content {
         gap: 10px;
         max-width: 100%;

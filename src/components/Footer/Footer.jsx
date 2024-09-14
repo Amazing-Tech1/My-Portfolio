@@ -14,7 +14,7 @@ function Footer() {
             </div>
             <p><a href="#">Back to Top</a></p>
             <hr />
-            <p>Copyright &copy; 2024 Amazing-Tech. All right reserved</p>
+            <p>Copyright &copy; 2024 Amazing-Tech. <br /> All right reserved</p>
         </footer>
     )
 }

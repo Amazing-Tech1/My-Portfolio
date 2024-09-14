@@ -10,11 +10,15 @@
 
 .hero-left {
     flex-basis: 50%;
-    animation: fadeIn 3s;
     padding-right: 1rem;
-    padding-left: 2rem;
+    padding-left: 6rem;
     display: flex;
     flex-direction: column;
+    animation: slideLeft 2s;
+}
+
+.typed-cursor {
+    display: none
 }
 
 .hero-left p {
@@ -47,7 +51,7 @@ h2 {
 }
 
 .hero-left button {
-    font-size: max(2vw, 20px);
+    font-size: 2rem;
     background-color: goldenrod;
     margin-top: 5rem;
     padding: 10px;
@@ -57,7 +61,11 @@ h2 {
     justify-content: center;
     gap: 5px;
     cursor: pointer;
-    width: 150px;
+    width: 200px;
+}
+.hero-left button:hover {
+    transform: scale(1.05);
+    background-color: rgba(218, 165, 32, 0.863);
 }
 
 .hero-right {
@@ -70,7 +78,8 @@ h2 {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     overflow: hidden;
-    animation: slideDown 2s;
+    animation: slideRight 3s;
+    z-index: 7;
 }
 
 .hero-right img {
@@ -93,6 +102,7 @@ h2 {
         align-items: center;
         padding: 2rem;
         height: 40%;
+        animation: slideUp 2s;
     }
 
     .hero-left h1 {
@@ -122,6 +132,7 @@ h2 {
         border-top-left-radius: 0;
         border-bottom-right-radius: 40%;
         border-bottom-left-radius: 40%;
+        animation: slideDown 3s;
     }
 }
 
@@ -144,8 +155,8 @@ h2 {
 
     .hero-left button {
         margin-top: 1.5rem;
-        font-size: max(2vw, 15px);
-        width: 100px;
+        font-size: 1.5rem;
+        width: 150px;
     }
 }
 
