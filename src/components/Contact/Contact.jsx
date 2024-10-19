@@ -3,6 +3,7 @@ import './Contact.css'
 import emailjs from '@emailjs/browser';
 import { RiMailLine, RiPhoneLine, RiMapPinLine } from 'react-icons/ri'
 import url from '../../assets/url.jpg'
+import { toast } from "react-toastify";
 
 function Contact() {
     const form = useRef();
@@ -10,17 +11,18 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_or4ubow', 'template_rz44kyl', form.current, {
+        emailjs.sendForm('service_k3b0w3t', 'template_rz44kyl', form.current, {
             publicKey: 'LR6iMnt9axgX2LAEZ',
         })
             .then(
                 () => {
                     console.log('SUCCESS!');
-                    alert('Email sent successfully')
+                    toast.success("Email sent Successfully")
+                    form.current.reset();
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
-                    alert('Email not sent, pls try again')
+                    toast.error("Email not sent! pls try again")
                 },
             );
     };
@@ -30,7 +32,7 @@ function Contact() {
             <div className="contact-container">
                 <div className="contact-left"
                     data-aos="fade-right"
-                    data-aos-duration="3000"
+                    data-aos-duration="2000"
                 >
                     <h2>Let's talk</h2>
                     <p>I'm currently available to take on new projects especially on the front end development, so feel free to send a message about anything that you want to work on</p>
@@ -39,11 +41,11 @@ function Contact() {
                         <div className='detail-container'>
                             <div className="contact-detail">
                                 <RiMailLine size={20} />
-                                <span>kelvinMakinde2@gmail.com</span>
+                                <span>kelvinmakinde2@gmail.com</span>
                             </div>
                             <div className="contact-detail">
                                 <RiPhoneLine size={20} />
-                                <span>+234 9065273201</span>
+                                <span>+2349065273201</span>
                             </div>
                             <div className="contact-detail">
                                 <RiMapPinLine size={20} />
@@ -54,7 +56,7 @@ function Contact() {
                 </div>
                 <div className="contact-right"
                     data-aos="fade-left"
-                    data-aos-duration="3000">
+                    data-aos-duration="2000">
                     <form ref={form} onSubmit={sendEmail}>
                         <label htmlFor="name"> Your Name</label>
                         <input type="text" id='name' placeholder='Enter your name' name="your_name" required />
