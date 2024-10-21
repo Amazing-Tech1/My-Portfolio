@@ -6,12 +6,12 @@ import Typed from 'typed.js';
 
 function Hero() {
     const el = useRef(null);
-    const resumeLink = '/Kelvin-Resume.pdf';
+    const resumeLink = '/Kelvin_Resume.pdf';
 
 
     useEffect(() => {
         const options = {
-            strings: ['Web Developer', 'React Developer'], // Typed strings
+            strings: ['Web Developer', 'React Developer'], 
             typeSpeed: 100,
             backSpeed: 50,
             backDelay: 1000,
