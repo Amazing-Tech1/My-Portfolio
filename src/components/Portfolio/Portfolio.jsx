@@ -4,6 +4,7 @@ import check_list from '../../assets/check-list.png'
 import weather_app from '../../assets/weather-app.png'
 import cart_app from '../../assets/cart_app.png'
 import delivery_app from '../../assets/Delivery_app.png'
+import youtube_clone from '../../assets/youtube-clone.png'
 
 function Portfolio() {
     return (
@@ -32,6 +33,10 @@ function Portfolio() {
                 </div>
                 <div className="work">
                     <img src={delivery_app} alt="" />
+                    <h2>Delivery app</h2>
+                </div>
+                <div className="work">
+                    <img src={youtube_clone} alt="" />
                     <h2>Delivery app</h2>
                 </div>
             </div>
